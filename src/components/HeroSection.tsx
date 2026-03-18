@@ -3,7 +3,6 @@ import { MessageCircle, Star, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const WHATSAPP_LINK = "https://wa.me/5519933294772?text=Olá! Vi o site da TRENDS SALON e gostaria de agendar uma avaliação.";
-const EASING = [0.25, 0.1, 0.25, 1] as const;
 
 const HeroSection = () => {
   return (
