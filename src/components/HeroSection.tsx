@@ -23,7 +23,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: EASING as unknown as string }}
+          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
           className="max-w-3xl"
         >
           <div className="flex items-center gap-2 text-gold mb-6 tracking-widest uppercase text-sm font-bold">
