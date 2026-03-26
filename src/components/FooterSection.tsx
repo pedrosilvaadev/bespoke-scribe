@@ -32,7 +32,7 @@ const FooterSection = () => (
       <div>
         <h4 className="font-bold mb-6 uppercase tracking-widest text-sm text-gold">Contato</h4>
         <div className="space-y-3 text-primary-foreground/60 font-body">
-          <p>📍 Indaiatuba - SP</p>
+          <a href="https://www.google.com/maps/place/TRENDS+SALON+(novo+endere%C3%A7o)/@-23.0876897,-47.2364554,15.75z/data=!4m15!1m8!3m7!1s0x94c8b35b6224430f:0x2f32b1c7fc361789!2sTRENDS+SALON+(novo+endere%C3%A7o)!8m2!3d-23.087289!4d-47.2378249!10e5!16s%2Fg%2F11cp7gk689!3m5!1s0x94c8b35b6224430f:0x2f32b1c7fc361789!8m2!3d-23.087289!4d-47.2378249!16s%2Fg%2F11cp7gk689?authuser=0&hl=pt&entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">📍 Av. Domingos Ferrarezzi, 2102 - Jardim Monte Verde, Indaiatuba - SP, 13348-875</a>
           <p>
             📞{" "}
             <a href="tel:+551933294772" className="hover:text-primary-foreground transition-colors">
@@ -53,7 +53,7 @@ const FooterSection = () => (
       </div>
     </div>
     <div className="max-w-7xl mx-auto px-6 pt-10 border-t border-primary-foreground/5 text-center text-primary-foreground/40 text-sm font-body">
-      <p>© 2025 TRENDS SALON (novo endereço). Todos os direitos reservados.</p>
+      <p>© 2025 TRENDS SALON. Todos os direitos reservados.</p>
       <div className="mt-2 flex justify-center gap-4">
         <a href="#" className="hover:text-primary-foreground/70">Política de Privacidade</a>
         <span>|</span>

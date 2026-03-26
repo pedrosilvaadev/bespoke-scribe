@@ -20,7 +20,9 @@ const ContactSection = () => (
             <div className="p-3 bg-surface rounded-lg text-primary"><MapPin size={20} /></div>
             <div>
               <div className="font-bold text-foreground">Endereço</div>
-              <p className="text-muted-foreground font-body">Indaiatuba - SP (Consulte o endereço completo via WhatsApp)</p>
+              <a
+                className="text-muted-foreground font-body"
+                href="https://www.google.com/maps/place/TRENDS+SALON+(novo+endere%C3%A7o)/@-23.0876897,-47.2364554,15.75z/data=!4m15!1m8!3m7!1s0x94c8b35b6224430f:0x2f32b1c7fc361789!2sTRENDS+SALON+(novo+endere%C3%A7o)!8m2!3d-23.087289!4d-47.2378249!10e5!16s%2Fg%2F11cp7gk689!3m5!1s0x94c8b35b6224430f:0x2f32b1c7fc361789!8m2!3d-23.087289!4d-47.2378249!16s%2Fg%2F11cp7gk689?authuser=0&hl=pt&entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">📍 Av. Domingos Ferrarezzi, 2102 - Jardim Monte Verde, Indaiatuba - SP, 13348-875</a>
             </div>
           </div>
           <div className="flex items-start gap-4">
@@ -34,7 +36,7 @@ const ContactSection = () => (
             <div className="p-3 bg-surface rounded-lg text-primary"><Clock size={20} /></div>
             <div>
               <div className="font-bold text-foreground">Horário de Atendimento</div>
-              <p className="text-muted-foreground font-body">Segunda a Sexta: 09h às 19h<br />Sábado: 09h às 13h</p>
+              <p className="text-muted-foreground font-body">Terça a Sexta: 08h às 18h<br />Sábado: 08h às 17h</p>
             </div>
           </div>
         </div>
@@ -59,7 +61,7 @@ const ContactSection = () => (
         className="h-[400px] bg-muted rounded-card overflow-hidden shadow-inner"
       >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58852.74837588824!2d-47.25143384999999!3d-23.08985175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf4ca646985f7d%3A0x6762331599553765!2sIndaiatuba%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
+          src="https://www.google.com/maps?q=Av.+Domingos+Ferrarezzi,+2102,+Jardim+Monte+Verde,+Indaiatuba+-+SP,+13348-875&output=embed"
           width="100%"
           height="100%"
           style={{ border: 0 }}

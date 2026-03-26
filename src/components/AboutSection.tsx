@@ -60,16 +60,6 @@ const AboutSection = () => (
             </li>
           ))}
         </ul>
-        <motion.a
-          href={WHATSAPP_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          className="inline-flex items-center gap-2 border-2 border-accent text-accent px-8 py-4 rounded-button font-bold hover:bg-accent hover:text-accent-foreground transition-colors"
-        >
-          Conheça nossa História
-        </motion.a>
       </motion.div>
     </div>
   </section>

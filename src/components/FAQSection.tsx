@@ -65,21 +65,24 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
 };
 
 const FAQSection = () => (
-  <section id="faq" className="py-20 md:py-32 px-6 md:px-12 max-w-4xl mx-auto">
-    <div className="text-center mb-16">
-      <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-        Dúvidas Frequentes
-      </h2>
-      <p className="text-muted-foreground font-body">
-        Tudo o que você precisa saber antes do seu procedimento.
-      </p>
-    </div>
-    <div className="space-y-2">
-      {faqs.map((faq, i) => (
-        <FAQItem key={i} question={faq.q} answer={faq.a} />
-      ))}
-    </div>
-  </section>
+  <div className="bg-surface overflow-hidden">
+    <section id="faq" className="py-20 md:py-32 px-6 md:px-12 max-w-4xl mx-auto ">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+          Dúvidas Frequentes
+        </h2>
+        <p className="text-muted-foreground font-body">
+          Tudo o que você precisa saber antes do seu procedimento.
+        </p>
+      </div>
+      <div className="space-y-2">
+        {faqs.map((faq, i) => (
+          <FAQItem key={i} question={faq.q} answer={faq.a} />
+        ))}
+      </div>
+    </section>
+  </div>
+
 );
 
 export default FAQSection;
