@@ -1,10 +1,12 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { MessageCircle, Star, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const WHATSAPP_LINK = "https://wa.me/5519933294772?text=Olá! Vi o site da TRENDS SALON e gostaria de agendar uma avaliação.";
 
 const HeroSection = () => {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <header className="relative min-h-screen flex items-center bg-hero-dark overflow-hidden">
       <div className="absolute inset-0 opacity-30">
@@ -15,14 +17,16 @@ const HeroSection = () => {
           className="w-full h-full object-cover"
           width={1920}
           height={1080}
+          loading="eager"
+          decoding="async"
         />
       </div>
 
       <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 30 }}
+          animate={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+          transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
           className="max-w-3xl"
         >
           <div className="flex items-center gap-2 text-gold mb-6 tracking-widest uppercase text-sm font-bold">
@@ -45,9 +49,10 @@ const HeroSection = () => {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-10 py-4 rounded-button font-bold text-lg shadow-lg hover:opacity-90 transition-opacity"
+              whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
+              whileTap={shouldReduceMotion ? {} : { scale: 0.98 }}
+              className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-10 py-4 rounded-button font-bold text-lg shadow-lg hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-opacity"
+              aria-label="Agendar avaliação gratuita pelo WhatsApp"
             >
               <MessageCircle size={20} />
               Quero Agendar Avaliação Gratuita

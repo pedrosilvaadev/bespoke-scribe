@@ -7,7 +7,7 @@ const FloatingWhatsApp = () => (
     href={WHATSAPP_LINK}
     target="_blank"
     rel="noopener noreferrer"
-    className="fixed bottom-6 right-6 z-[9999] bg-whatsapp text-primary-foreground w-14 h-14 md:w-auto md:h-auto md:px-6 md:py-3 rounded-full flex items-center justify-center gap-2 shadow-xl animate-wa-pulse hover:opacity-90 transition-opacity"
+    className="fixed bottom-6 right-6 z-[9999] bg-whatsapp text-primary-foreground w-14 h-14 md:w-auto md:h-auto md:px-6 md:py-3 rounded-full flex items-center justify-center gap-2 shadow-xl animate-wa-pulse hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-opacity"
     aria-label="Agendar pelo WhatsApp"
   >
     <MessageCircle size={24} />

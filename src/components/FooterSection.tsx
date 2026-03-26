@@ -12,7 +12,7 @@ const FooterSection = () => (
         </p>
       </div>
       <div>
-        <h4 className="font-bold mb-6 uppercase tracking-widest text-sm text-gold">Links Rápidos</h4>
+        <h3 className="font-bold mb-6 uppercase tracking-widest text-sm text-gold">Links Rápidos</h3>
         <ul className="space-y-4 text-primary-foreground/60 font-body">
           {[
             { label: "Início", href: "#" },
@@ -30,7 +30,7 @@ const FooterSection = () => (
         </ul>
       </div>
       <div>
-        <h4 className="font-bold mb-6 uppercase tracking-widest text-sm text-gold">Contato</h4>
+        <h3 className="font-bold mb-6 uppercase tracking-widest text-sm text-gold">Contato</h3>
         <div className="space-y-3 text-primary-foreground/60 font-body">
           <a href="https://www.google.com/maps/place/TRENDS+SALON+(novo+endere%C3%A7o)/@-23.0876897,-47.2364554,15.75z/data=!4m15!1m8!3m7!1s0x94c8b35b6224430f:0x2f32b1c7fc361789!2sTRENDS+SALON+(novo+endere%C3%A7o)!8m2!3d-23.087289!4d-47.2378249!10e5!16s%2Fg%2F11cp7gk689!3m5!1s0x94c8b35b6224430f:0x2f32b1c7fc361789!8m2!3d-23.087289!4d-47.2378249!16s%2Fg%2F11cp7gk689?authuser=0&hl=pt&entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">📍 Av. Domingos Ferrarezzi, 2102 - Jardim Monte Verde, Indaiatuba - SP, 13348-875</a>
           <p>
@@ -39,12 +39,12 @@ const FooterSection = () => (
               (19) 3329-4772
             </a>
           </p>
-          <p>🕐 Seg-Sex: 09h-19h · Sáb: 09h-13h</p>
+          <p>🕐 Ter-Sex: 08h-18h · Sáb: 08h-17h</p>
           <a
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-whatsapp text-primary-foreground px-4 py-2 rounded-button font-bold text-sm mt-2 hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 bg-whatsapp text-primary-foreground px-4 py-2 rounded-button font-bold text-sm mt-2 hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-opacity"
           >
             <MessageCircle size={16} />
             WhatsApp
