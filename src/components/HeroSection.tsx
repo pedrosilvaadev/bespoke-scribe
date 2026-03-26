@@ -37,7 +37,7 @@ const HeroSection = () => {
 
           <p className="text-lg md:text-xl text-primary-foreground/70 mb-10 leading-relaxed max-w-2xl font-body">
             Especialistas em rejuvenescimento e bem-estar. Tecnologia de ponta e
-            atendimento personalizado no novo endereço da TRENDS SALON.
+            atendimento personalizado na TRENDS SALON.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">

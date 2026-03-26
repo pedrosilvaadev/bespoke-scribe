@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
 const testimonials = [
-  { name: "Mariana S.", text: "Tinha muitas manchas de acne e baixa autoestima. Depois de 3 sessões de peeling na Trends Salon, minha pele está outra! Meu marido não acreditou na diferença. Super recomendo o novo espaço!", proc: "Peeling Químico" },
-  { name: "Fernanda L.", text: "Atendimento impecável! A equipe é muito atenciosa e carinhosa. O resultado do meu botox ficou super natural — ninguém percebeu que fiz, só que estou mais jovem. Melhor de Indaiatuba!", proc: "Botox" },
-  { name: "Juliana R.", text: "Já indiquei para todas as minhas amigas e colegas de trabalho. A limpeza de pele é a mais completa que já fiz. O ambiente é maravilhoso e me senti muito segura!", proc: "Limpeza de Pele" },
+  { name: "Fernanda D.", text: "Produtos das melhores marcas, profissionais excelentes, que atendem todas as necessidades do seu cabelo/couro cabeludo! E ainda com direito a cafezinho ou cappuccino excepcionais!!! Amo 😍",  },
+  { name: "Ricardo R.", text: "O salão é ótimo, bem localizado e tem um espaço amplo que conta com serviços de manicure e cabeleireiras. A equipe é altamente competente e capacitada, sempre em busca de novas técnicas e aprendizado.",  },
+  { name: "Daniela TR.", text: "Atendimento excelente. E corte da Lu perfeito além da simpatia. Acho o melhor corte de cabelo da cidade.\nTive uma excelente experiência.\nVocês fazem a diferença! Sucesso e nos vemos em breve",  },
 ];
 
 const TestimonialsSection = () => (
@@ -32,7 +32,7 @@ const TestimonialsSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.15, duration: 0.5 }}
-            className="bg-card p-8 rounded-card"
+            className="bg-card p-8 rounded-card justify-between flex flex-col"
             style={{ boxShadow: "var(--shadow-card)" }}
           >
             <div className="flex text-yellow-400 mb-4">
@@ -49,9 +49,6 @@ const TestimonialsSection = () => (
               </div>
               <div>
                 <div className="font-bold text-foreground">{t.name}</div>
-                <div className="text-xs text-accent font-bold uppercase tracking-widest">
-                  {t.proc}
-                </div>
               </div>
             </div>
           </motion.div>

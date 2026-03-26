@@ -81,10 +81,10 @@ const ServicesSection = () => {
               <p className="text-muted-foreground mb-6 flex-grow leading-relaxed font-body">
                 {service.desc}
               </p>
-              <div className="pt-6 border-t border-border flex justify-between items-center">
+              {/* <div className="pt-6 border-t border-border flex justify-between items-center">
                 <span className="text-sm text-muted-foreground">A partir de</span>
                 <span className="text-xl font-bold text-accent">R$ {service.price}</span>
-              </div>
+              </div> */}
             </motion.div>
           ))}
         </motion.div>
