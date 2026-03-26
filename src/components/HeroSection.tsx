@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <header className="relative min-h-screen flex items-center bg-hero-dark overflow-hidden">
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0 bg-gradient-to-r from-hero-dark via-hero-dark/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-hero-dark/70 via-hero-dark/50 to-transparent md:from-hero-dark md:via-hero-dark/80 z-10" />
         <img
           src={heroBg}
           alt="Beleza e estética"
@@ -44,14 +44,14 @@ const HeroSection = () => {
             atendimento personalizado na TRENDS SALON.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 mb-12 ">
             <motion.a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
               whileTap={shouldReduceMotion ? {} : { scale: 0.98 }}
-              className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-10 py-4 rounded-button font-bold text-lg shadow-lg hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-opacity"
+              className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-4 md:px-10 py-4 rounded-button font-bold shadow-lg hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 transition-opacity text-sm md:text-lg"
               aria-label="Agendar avaliação gratuita pelo WhatsApp"
             >
               <MessageCircle size={20} />
